@@ -10,6 +10,7 @@ import Grid from '@material-ui/core/Grid';
 import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
+import './Styles/colores.css'
 
 
 const useStyles = makeStyles(theme => ({
@@ -69,8 +70,9 @@ export default function SignIn() {
                         type="submit"
                         fullWidth
                         variant="contained"
-                        color="primary"
-                        className={classes.submit}
+                        // color="primary"
+                        classes={{ root: classes.submit }}
+                        className={"bgcol-stem"}
                     >
                         Sign In
           </Button>
