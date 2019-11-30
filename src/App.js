@@ -1,24 +1,22 @@
-import React, { Component } from 'react';
+import React, { Component } from "react";
 // import MaterialUi from '@material-ui/core'
 
-import SignIn from './Signin'
-import Logo from './logo'
-
+import SignIn from "./Signin";
+import Logo from "./logo";
+import BotonUsuario from "./BotonUsuario";
 
 class App extends Component {
   render() {
     return (
       <div>
-        <Logo>
-        </Logo>
+        <Logo></Logo>
 
-        <SignIn>
-        </SignIn>
+        <SignIn></SignIn>
+
+        <BotonUsuario />
       </div>
-    )
+    );
   }
 }
-
-
 
 export default App;
