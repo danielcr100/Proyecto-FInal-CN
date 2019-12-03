@@ -3,7 +3,7 @@ import React, { Component } from "react";
 
 import SignIn from "./Signin";
 import Logo from "./logo";
-import BotonUsuario from "./BotonUsuario";
+import BotonUsuario from "./Botones";
 
 class App extends Component {
   render() {
