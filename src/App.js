@@ -1,22 +1,37 @@
-import React, { Component } from "react";
+import React from "react";
 // import MaterialUi from '@material-ui/core'
+import { Link, Switch, Route } from 'react-router-dom'
 
 import SignIn from "./Signin";
-import Logo from "./logo";
-import BotonUsuario from "./Botones";
+import Boton from "./Botones";
 
-class App extends Component {
-  render() {
-    return (
-      <div>
-        <Logo></Logo>
+function App() {
+  return (
+    <div>
+      <header>
+        <h1>VINIS </h1>
 
-        <SignIn></SignIn>
+        <nav>
 
-        <BotonUsuario />
-      </div>
-    );
-  }
+          <ul>
+            <li>
+              <Link to={"/SignIn"}>SignIn</Link>
+            </li>
+            <li>
+              <Link to={"/Botones"}>Botones</Link>
+            </li>
+          </ul>
+        </nav>
+      </header>
+      <section>
+        <Switch>
+          <Route exact path='/SignIn' component={SignIn} />
+          <Route path='/Botones' component={Boton} />
+        </Switch>
+      </section>
+
+    </div>
+  );
 }
 
 export default App;

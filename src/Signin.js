@@ -11,6 +11,8 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import './Styles/colores.css'
+import Logo from "./logo";
+
 
 
 const useStyles = makeStyles(theme => ({
@@ -33,7 +35,11 @@ export default function SignIn() {
     const classes = useStyles();
 
     return (
+
+
         <Container component="main" maxWidth="xs">
+            <Logo></Logo>
+
             <CssBaseline />
             <div className={classes.paper}>
                 <Typography component="h1" variant="h5">
@@ -67,6 +73,7 @@ export default function SignIn() {
                         label="Remember me"
                     />
                     <Button
+                        href='/Botones'
                         type="submit"
                         fullWidth
                         variant="contained"

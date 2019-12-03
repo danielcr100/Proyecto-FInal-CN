@@ -5,13 +5,18 @@ import App from './App';
 import * as serviceWorker from './serviceWorker';
 import { ThemeProvider } from '@material-ui/styles'
 import { CssBaseline } from '@material-ui/core';
-import theme from 'createMuiTheme'
+import { BrowserRouter } from 'react-router-dom'
+
+
+
 
 ReactDOM.render(
-    <ThemeProvider theme={theme}>
-        <CssBaseline />
-        <App />
-    </ThemeProvider>,
+    <BrowserRouter>
+        <ThemeProvider>
+            <CssBaseline />
+            <App />
+        </ThemeProvider>,
+    </BrowserRouter>,
 
     document.getElementById('root')
 
