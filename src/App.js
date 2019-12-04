@@ -1,9 +1,12 @@
 import React from "react";
 // import MaterialUi from '@material-ui/core'
-import { Link, Switch, Route } from 'react-router-dom'
+import { Switch, Route } from 'react-router-dom'
 
 import SignIn from "./Signin";
 import Boton from "./Botones";
+import FormUser from "./FormularioServicios";
+
+import './Styles/estilos.css'
 
 function App() {
   return (
@@ -11,22 +14,12 @@ function App() {
       <header>
         <h1>VINIS </h1>
 
-        <nav>
-
-          <ul>
-            <li>
-              <Link to={"/SignIn"}>SignIn</Link>
-            </li>
-            <li>
-              <Link to={"/Botones"}>Botones</Link>
-            </li>
-          </ul>
-        </nav>
       </header>
       <section>
         <Switch>
           <Route exact path='/SignIn' component={SignIn} />
           <Route path='/Botones' component={Boton} />
+          <Route path='/FormUser' component={FormUser} />
         </Switch>
       </section>
 

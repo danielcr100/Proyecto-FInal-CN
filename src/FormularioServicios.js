@@ -1,6 +1,6 @@
 import React from "react";
 
-class FormularioServicio extends React.Component {
+class FormUser extends React.Component {
   constructor(props) {
     super(props);
     this.state = {};
@@ -256,4 +256,4 @@ class FormularioServicio extends React.Component {
   }
 }
 
-export default FormularioServicio;
+export default FormUser;
