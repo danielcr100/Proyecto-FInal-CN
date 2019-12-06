@@ -36,10 +36,12 @@ export default function FloatingActionButtons() {
           USUARIO
       </Fab>
       </Link>
-      <Fab href='' color="secondary" variant="extended" className={"bgcol-stem"}>
-        <NavigationIcon className={classes.extendedIcon} />
-        COLABORADOR
+      <Link to='/FormClient'>
+        <Fab href='' color="secondary" variant="extended" className={"bgcol-stem"}>
+          <NavigationIcon className={classes.extendedIcon} />
+          COLABORADOR
       </Fab>
+      </Link>
     </div>
   );
 }

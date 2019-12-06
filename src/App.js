@@ -5,6 +5,7 @@ import { Switch, Route } from 'react-router-dom'
 import SignIn from "./Signin";
 import Boton from "./Botones";
 import FormUser from "./FormularioServicios";
+import FormClient from "./FormularioServicios"
 
 import './Styles/estilos.css'
 
@@ -20,6 +21,7 @@ function App() {
           <Route exact path='/SignIn' component={SignIn} />
           <Route path='/Botones' component={Boton} />
           <Route path='/FormUser' component={FormUser} />
+          <Route path='/FormClient' component={FormClient} />
         </Switch>
       </section>
 
