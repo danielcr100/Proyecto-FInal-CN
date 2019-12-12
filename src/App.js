@@ -9,6 +9,8 @@ import FormUser from "./Pages/FormularioServicios";
 import FormClient from "./Pages/FormularioServicios";
 import AutoGridNoWrap from "./Pages/Agendar1"
 
+
+
 import './Styles/estilos.css'
 
 function App() {
@@ -17,6 +19,8 @@ function App() {
       <AutoGridNoWrap></AutoGridNoWrap>
       <header>
         <h1>VINIS </h1>
+
+        <Boton> </Boton>
 
       </header>
       <section>
