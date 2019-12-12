@@ -3,10 +3,10 @@ import CssBaseline from '@material-ui/core/CssBaseline';
 import Typography from '@material-ui/core/Typography';
 import Container from '@material-ui/core/Container';
 
-import Services from './Services'
-import Payment from './Components/Payment'
-import DateTime from './Components/DateTime'
-import Logo from './Components/logo'
+import Services from '../Services'
+import Payment from '../Components/Payment'
+import DateTime from '../Components/DateTime'
+import Logo from '../Components/logo'
 
 
 

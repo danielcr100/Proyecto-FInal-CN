@@ -10,7 +10,7 @@ import Typography from '@material-ui/core/Typography';
 import { makeStyles } from '@material-ui/core/styles';
 import Container from '@material-ui/core/Container';
 import './Styles/colores.css'
-import Logo from "./Components/logo";
+import Logo from "../Components/logo";
 import { Link } from 'react-router-dom'
 
 

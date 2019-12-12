@@ -3,11 +3,11 @@ import React from "react";
 import { Switch, Route } from 'react-router-dom'
 
 
-import SignIn from "./Signin";
+import SignIn from "./Pages/Signin";
 import Boton from "./Components/Botones";
-import FormUser from "./FormularioServicios";
-import FormClient from "./FormularioServicios";
-import AutoGridNoWrap from "./Agendar1"
+import FormUser from "./Pages/FormularioServicios";
+import FormClient from "./Pages/FormularioServicios";
+import AutoGridNoWrap from "./Pages/Agendar1"
 
 import './Styles/estilos.css'
 
