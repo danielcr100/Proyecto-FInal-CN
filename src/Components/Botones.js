@@ -2,7 +2,7 @@ import React from "react";
 import { makeStyles } from "@material-ui/core/styles";
 import Fab from "@material-ui/core/Fab";
 import NavigationIcon from "@material-ui/icons/Navigation";
-import "./Styles/colores.css";
+import "../Styles/colores.css";
 import { Link } from 'react-router-dom'
 
 
