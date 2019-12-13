@@ -1,6 +1,6 @@
 import React from "react";
 // import MaterialUi from '@material-ui/core'
-import { Switch, Route } from 'react-router-dom'
+import { Switch, Route, Redirect } from 'react-router-dom'
 
 
 import SignIn from "./Pages/Signin";
@@ -15,8 +15,6 @@ import Agendar from "./Pages/Agendar1"
 function App() {
   return (
     <div>
-      <SignIn></SignIn>
-
       <section>
         <Switch>
           <Route exact path='/SignIn' component={SignIn} />
@@ -25,6 +23,7 @@ function App() {
           <Route path='/FormUser' component={FormUser} />
           <Route path='/FormClient' component={FormClient} />
           <Route path='/Agendar' component={Agendar} />
+          <Redirect to='/SignIn' />
         </Switch>
       </section>
 
