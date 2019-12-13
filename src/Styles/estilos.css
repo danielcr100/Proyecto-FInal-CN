@@ -4,3 +4,13 @@ body{
 a{
     text-decoration: none;
 }
+
+
+h1, p {
+    font-family: Lato;
+  }
+  
+  .main{
+    background-color: rgb(250, 255, 255, 0.625);
+    border-radius: 10px;
+  }

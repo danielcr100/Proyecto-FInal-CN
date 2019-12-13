@@ -14,9 +14,6 @@ import Logo from "../Components/logo";
 import { Link } from 'react-router-dom'
 
 
-
-
-
 const useStyles = makeStyles(theme => ({
     paper: {
         marginTop: theme.spacing(0),
@@ -73,6 +70,19 @@ export default function SignIn() {
                         control={<Checkbox value="remember" color="primary" />}
                         label="Remember me"
                     />
+                    <Link to='/Botones2'>
+                        <Button
+
+                            type="submit"
+                            fullWidth
+                            variant="contained"
+                            // color="primary"
+                            classes={{ root: classes.submit }}
+                            className={"bgcol-stem"}
+                        >
+                            Log In
+          </Button>
+                    </Link>
                     <Link to='/Botones'>
                         <Button
 

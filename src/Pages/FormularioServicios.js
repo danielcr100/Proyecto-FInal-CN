@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from '../Components/logo'
 
 class FormUser extends React.Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class FormUser extends React.Component {
   render() {
     return (
       <div className="container">
+        <Logo></Logo>
         <div className="py-5 text-center">
           <img
             className="d-block mx-auto mb-4 animated infinite rubberBand"

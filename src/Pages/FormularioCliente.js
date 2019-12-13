@@ -1,4 +1,5 @@
 import React from "react";
+import Logo from '../Components/logo'
 
 class FormClient extends React.Component {
   constructor(props) {
@@ -9,6 +10,7 @@ class FormClient extends React.Component {
   render() {
     return (
       <div className="container">
+        <Logo></Logo>
         <div class="row center d-flex justify-content-center">
           <div classNameName="col-md-8 order-md-1">
             <h4 className="mb-3">Formulario de servicio</h4>

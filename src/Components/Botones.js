@@ -6,6 +6,8 @@ import "../Styles/colores.css";
 import { Link } from 'react-router-dom'
 
 
+
+
 const useStyles = makeStyles(theme => ({
   root: {
     display: "flex",
@@ -25,18 +27,18 @@ const useStyles = makeStyles(theme => ({
   }
 }));
 
-export default function FloatingActionButtons() {
+export default function Botones() {
   const classes = useStyles();
 
   return (
     <div className={classes.root}>
-      <Link to='/FormUser'>
+      <Link to='/FormClient'>
         <Fab color="primary" variant="extended" className={"bgcol-petal"}>
           <NavigationIcon className={classes.extendedIcon} />
           USUARIO
       </Fab>
       </Link>
-      <Link to='/FormClient'>
+      <Link to='/FormUser'>
         <Fab href='' color="secondary" variant="extended" className={"bgcol-stem"}>
           <NavigationIcon className={classes.extendedIcon} />
           COLABORADOR

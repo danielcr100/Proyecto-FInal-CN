@@ -4,31 +4,27 @@ import { Switch, Route } from 'react-router-dom'
 
 
 import SignIn from "./Pages/Signin";
-import Boton from "./Components/Botones";
+import Botones from "./Components/Botones";
+import Botones2 from './Components/Botones2'
 import FormUser from "./Pages/FormularioServicios";
-import FormClient from "./Pages/FormularioServicios";
-import AutoGridNoWrap from "./Pages/Agendar1"
+import FormClient from "./Pages/FormularioCliente";
+import Agendar from "./Pages/Agendar1"
 
 
-
-import './Styles/estilos.css'
 
 function App() {
   return (
     <div>
-      <AutoGridNoWrap></AutoGridNoWrap>
-      <header>
-        <h1>VINIS </h1>
+      <SignIn></SignIn>
 
-        <Boton> </Boton>
-
-      </header>
       <section>
         <Switch>
           <Route exact path='/SignIn' component={SignIn} />
-          <Route path='/Botones' component={Boton} />
+          <Route path='/Botones' component={Botones} />
+          <Route path='/Botones2' component={Botones2} />
           <Route path='/FormUser' component={FormUser} />
           <Route path='/FormClient' component={FormClient} />
+          <Route path='/Agendar' component={Agendar} />
         </Switch>
       </section>
 
