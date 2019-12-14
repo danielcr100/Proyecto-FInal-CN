@@ -2,8 +2,8 @@
 const express = require("express")
 const bodyParser = require("body-parser")
 
-const { Servicio } = require("./models/agendar")
-const { socio } = require("./models/Socio")
+const { Servicio } = require("./models/FormClient")
+const { socio } = require("./models/FormUser")
 
 //** PORT */
 const PORT = 3000
