@@ -55,17 +55,17 @@ app.post("/post/servicio", (req, res) => {
     provincia,
     codigo_postal,
     guardar_info,
-    tipo_Pago,
-    nombre_tarjeta,
-    numero_tarjeta,
-    fecha_exp,
-    cvv
+    Tipo_Pago,
+    Nombre_Tarjeta,
+    Numero_Tarjeta,
+    Fecha_Exp,
+    CVV
 
   })
   newService.save((err, servicio) => {
     !err
-      ? response.status(201).send(servicio)
-      : response.status(400).send(servicio)
+      ? res.status(201).send(servicio)
+      : res.status(400).send(servicio)
   })
 })
 
