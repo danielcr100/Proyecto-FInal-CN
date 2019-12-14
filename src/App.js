@@ -9,6 +9,7 @@ import Botones2 from './Components/Botones2'
 import FormUser from "./Pages/FormularioServicios";
 import FormClient from "./Pages/FormularioCliente";
 import Agendar from "./Pages/Agendar1"
+import Calendar from "./Pages/Calendar"
 
 
 
@@ -23,6 +24,7 @@ function App() {
           <Route path='/FormUser' component={FormUser} />
           <Route path='/FormClient' component={FormClient} />
           <Route path='/Agendar' component={Agendar} />
+          <Route path='/Calendar' component={Calendar} />
           <Redirect to='/SignIn' />
         </Switch>
       </section>
